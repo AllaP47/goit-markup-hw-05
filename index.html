@@ -552,26 +552,54 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <form class="form-imail">
+            <label class="imail-form-label-footer">
+              Subscribe
+              <input
+                class="imail-input"
+                type="text"
+                name="username"
+                placeholder="imail"
+              />
+            </label>
 
-        <form class="form-imail">
-          <label class="imail-form-label-footer">
-            Subscribe
-            <input
-              class="imail-input"
-              type="text"
-              name="username"
-              placeholder="imail"
-            />
-          </label>
-
-          <button class="btn-subscribe" type="submit">
-            Subscribe
-            <svg class="icon-Subscribe" width="24" height="24">
-              <use href="./images/icons.svg#icon-Frame"></use>
-            </svg>
-          </button>
-        </form>
+            <button class="btn-subscribe" type="submit">
+              Subscribe
+              <svg class="icon-Subscribe" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <form class="form-modal">
+          <span class="text-modal"
+            >Leave your contacts and we will call you back</span
+          >
+          <label class="modal-window">
+            Name
+            <input class="info" type="text" name="username" />
+            Phone
+            <input class="info" type="tel" name="number-pfone" />
+            Email
+            <input class="info" type="email" name="email" />
+            Comment
+            <input
+              class="info"
+              type="comment"
+              name="text-comment"
+              placeholder="Text input"
+            />
+            I accept the terms and conditions of the Privacy Policy
+            <input type="checkbox" name="privacy-policy" required />
+          </label>
+          <button class="btn-modal" type="submit"></button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

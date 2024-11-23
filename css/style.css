@@ -591,12 +591,17 @@ img {
   fill: #f4f4fd;
 }
 
+.footer-form {
+  width: 100%;
+  height: 100%;
+}
 .form-imail {
   display: flex;
   align-items: baseline;
   justify-content: center;
   margin-left: 80px;
 }
+
 .imail-input {
   border: 1px solid #fff;
   background: transparent;
@@ -605,6 +610,7 @@ img {
   height: 40px;
   margin-top: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .btn-subscribe {
   display: flex;
@@ -615,9 +621,77 @@ img {
   padding: 8px 24px;
   width: 258px;
   height: 54px;
+  padding: 8px 24px 8px 24px;
   background-color: #4d5ae5;
+  color: #fff;
 }
 
 .icon-Subscribe {
   fill: #fff;
+}
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(46, 47, 66, 0.4);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  overflow-y: auto;
+  background-color: rgba(252, 252, 252, 1);
+}
+
+.form-modal {
+  border-radius: 4px;
+  width: 408px;
+  height: 584px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
+}
+
+.modal-window {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 4px;
+  width: 360px;
+  height: 336px;
+  padding-top: 16px;
+  padding-left: 24px;
+}
+.text-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  padding-top: 72px;
+}
+
+.info {
+  width: 360px;
+  height: 58px;
 }
