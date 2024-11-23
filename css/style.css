@@ -591,41 +591,33 @@ img {
   fill: #f4f4fd;
 }
 
-.footer-imail {
+.form-imail {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   margin-left: 80px;
 }
-
-.footer-imail-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #fff;
-  margin: 0 0 16px;
-}
-
 .imail-input {
   border: 1px solid #fff;
+  background: transparent;
   border-radius: 4px;
   width: 264px;
   height: 40px;
+  margin-top: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-
-.button-subscribe {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: #fff;
+.btn-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
   border-radius: 4px;
   padding: 8px 24px;
   width: 258px;
   height: 54px;
+  background-color: #4d5ae5;
 }
+
 .icon-Subscribe {
   fill: #fff;
 }
