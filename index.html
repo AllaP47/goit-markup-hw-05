@@ -584,24 +584,38 @@
             Name
             <input class="info" type="text" name="username" />
             Phone
-            <input class="info" type="tel" name="number-pfone" />
+            <input class="info" type="tel" name="userpfone" />
             Email
-            <input class="info" type="email" name="email" />
+            <input class="info" type="email" name="useremail" />
+
             Comment
-            <input
-              class="info"
-              type="comment"
-              name="text-comment"
+            <textarea
+              class="comment"
+              name="user-comment"
+              rows="7"
               placeholder="Text input"
-            />
-            <div class="checkbox-container">
-              <input type="checkbox" name="privacy-policy" required />
-              <span class="text-checkbox"
-                >I accept the terms and conditions of the Privacy Policy</span
-              >
-            </div>
+            ></textarea>
           </label>
-          <button class="btn-modal" type="submit"></button>
+          <div class="checkbox-modal">
+            <input
+              class="visualli-hidden"
+              type="checkbox"
+              name="user-privacy"
+              required
+            />
+            <svg class="icon-checkbox" width="10" height="8">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+            <span class="text-checkbox"
+              >I accept the terms and conditions of the Privacy Policy
+            </span>
+          </div>
+
+          <button class="btn-modal" type="submit">
+            <svg class="icon-modal" width="32" height="16">
+              <use href="./images/icons.svg#icon-Order-Service"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </div>
