@@ -549,12 +549,12 @@ img {
 }
 
 .footer-social-text {
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  margin-bottom: 16px;
 }
 
 .footer-social-icon-list {
@@ -600,10 +600,8 @@ img {
 }
 .form-email {
   display: flex;
-  align-items: baseline;
-  justify-content: center;
+
   gap: 24px;
-  margin-left: 80px;
 }
 
 .email-input {
@@ -641,8 +639,8 @@ img {
   border: none;
 }
 
-.icon-Subscribe {
-  margin-bottom: 16px;
+.icon-subscribe {
+  margin-left: 16px;
   fill: #fff;
 }
 
@@ -660,7 +658,7 @@ img {
 
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(04, 0, 0.2, 1),
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -704,17 +702,30 @@ img {
 }
 
 .click-button:hover,
-.click-button {
+.click-button:focus {
   background-color: #404bbf;
   border: none;
 }
+
 .icon-click {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .icon-click:hover,
 .icon-click:focus {
   fill: #ffffff;
 }
+
+.text-modal {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
 .form-modal {
   border-radius: 4px;
   width: 408px;
@@ -788,18 +799,7 @@ img {
 .comment:focus {
   border-color: #4d5ae5;
 }
-.text-modal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  margin-bottom: 16px;
-}
+
 .checkbox-modal {
   margin-bottom: 24px;
 }
