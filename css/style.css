@@ -730,19 +730,64 @@ img {
 .window {
   display: block;
   margin-bottom: 4px;
-  border-radius: 4px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
-input .info .comment {
-  width: 100%;
-  height: 100%;
+.modal-window-info {
+  position: relative;
 }
 
+.info {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info:focus {
+  border-color: #4d5ae5;
+}
+
+.icon-window {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-window:focus {
+  fill: #4d5ae5;
+}
+
+.modal-window-comment {
+  margin-bottom: 16px;
+}
+.comment {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment:focus {
+  border-color: #4d5ae5;
+}
 .text-modal {
   display: flex;
   align-items: center;
@@ -755,16 +800,12 @@ input .info .comment {
   color: #2e2f42;
   margin-bottom: 16px;
 }
-
-.checkbox-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.checkbox-modal {
+  margin-bottom: 24px;
 }
-.text-checkbox {
-  font-weight: 400;
+.checkbox-privacy {
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -778,6 +819,21 @@ input .info .comment {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.text-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+}
+
 .btn-modal {
   display: flex;
   align-items: center;
