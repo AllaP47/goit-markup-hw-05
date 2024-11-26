@@ -875,7 +875,7 @@ img {
   fill: transparent;
 }
 
-input [type="checkbox"]:checked > .checkbox-privacy > .text-checkbox {
+input [type="checkbox"]:checked + .checkbox-privacy > .text-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
