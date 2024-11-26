@@ -850,11 +850,9 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
 }
 
-input [type="checkbox"]:checked + .checkbox-privacy > .check {
+input [type="checkbox"]:checked + .checkbox-privacy .check {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
