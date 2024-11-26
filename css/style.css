@@ -853,11 +853,7 @@ img {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-input [type="checkbox"]:checked + .checkbox-privacy > .text-checkbox {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-}
+
 .text-checkbox {
   display: inline-flex;
   align-items: center;
@@ -871,24 +867,32 @@ input [type="checkbox"]:checked + .checkbox-privacy > .text-checkbox {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
 }
+
 .checkbox-link {
   line-height: 1.4;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
+
+input [type="checkbox"]:checked > .text-checkbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
 .btn-modal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  min-width: 169px;
 
   border-radius: 4px;
   padding: 16px 32px;
   width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #e5e5e5;
+  background-color: #4d5ae5;
   margin: 0 auto;
+  color: #ffffff;
 }
 
 .icon-modal {
