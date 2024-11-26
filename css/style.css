@@ -837,6 +837,12 @@ img {
   scale: (1.5);
 }
 
+input:checked + label > span {
+  fill: #f4f4fd;
+  border: none;
+  background-color: #404bbf;
+}
+
 .checkbox-modal {
   margin-bottom: 24px;
 }
@@ -852,7 +858,7 @@ img {
   border: 0;
 }
 
-input [type="checkbox"]:checked + .checkbox-privacy .check {
+input [type="checkbox"]:checked + .checkbox-privacy .check .icon-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
