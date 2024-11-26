@@ -731,13 +731,14 @@ img {
   border: none;
   border-color: #404bbf;
 }
-.icon-click {
-  fill: black;
+
+.click-button:hover .icon-click,
+.click-button:focus .icon-click {
+  fill: #ffffff;
 }
 
-.icon-click:hover,
-.icon-click:focus {
-  fill: #ffffff;
+.icon-click {
+  fill: black;
 }
 
 .text-modal {
@@ -752,7 +753,7 @@ img {
 
 .form-modal {
   border-radius: 4px;
-  width: 408px;
+
   height: 584px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -840,7 +841,7 @@ img {
   margin-bottom: 24px;
 }
 
-.visualli-hidden {
+.visualli-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
