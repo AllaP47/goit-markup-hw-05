@@ -841,7 +841,7 @@ img {
   margin-bottom: 24px;
 }
 
-.visualli-hidden:not(:focus):not(:active) {
+.visualli-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -850,6 +850,8 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
 }
 
 .checkbox-privacy {
