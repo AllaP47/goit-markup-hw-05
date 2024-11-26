@@ -735,11 +735,8 @@ img {
   fill: black;
 }
 
-.icon-click:hover .icon-click {
-  fill: #ffffff;
-}
-
-.icon-click:focus .icon-click {
+.icon-click:hover,
+.icon-click:focus {
   fill: #ffffff;
 }
 
@@ -875,7 +872,7 @@ img {
   fill: transparent;
 }
 
-input [type="checkbox"]:checked > .text-checkbox {
+input [type="checkbox"]:checked > .checkbox-privacy > .text-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
