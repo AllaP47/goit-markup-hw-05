@@ -592,27 +592,16 @@ img {
 }
 
 .footer-form-block {
-  display: block;
-  margin-left: 80px;
-  width: 100%;
-  height: 100%;
+  margin-left: auto;
 }
 .footer-form {
   display: flex;
   align-items: center;
-  justify-content: center;
+
   gap: 24px;
-  align-items: flex-end;
-  margin-left: auto;
-  font-family: inherit;
 }
-.footer-form-label {
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-}
+
 .email-input {
-  display: flex;
   border: 1px solid #fff;
   background: transparent;
   font-size: 12px;
@@ -643,7 +632,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  margin-right: 16px;
+
   border-radius: 4px;
 
   min-width: 165px;
@@ -751,14 +740,6 @@ img {
   margin-bottom: 16px;
 }
 
-.form-modal {
-  border-radius: 4px;
-
-  height: 584px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background: #fcfcfc;
-}
 .modal-window {
   margin-bottom: 8px;
 }
@@ -883,6 +864,7 @@ input [type="checkbox"]:checked + .checkbox-privacy .check .icon-checkbox {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
+  margin-right: 8px;
 }
 
 .checkbox-link {
@@ -913,6 +895,7 @@ input [type="checkbox"]:checked + .checkbox-privacy .check .icon-checkbox {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  fill: #ffffff;
 }
 .icon-modal:hover,
 .icon-modal:focus {
